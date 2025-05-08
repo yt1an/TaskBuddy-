@@ -1,0 +1,180 @@
+/*
+Color Palette
+#2d336b - dark color
+#788c7 - medyo light
+#a9b5df - light
+#2d336b - medyo white
+#eb4335 - red
+#34a853 - green
+*/
+
+/**/
+img{
+    height: 50px;
+    width: auto;
+}
+
+body{
+    margin: 0px;
+}
+
+
+
+/*HEADER*/
+.header{
+    background-color: gray;
+    height: 60px;
+    padding: 20px;
+}
+
+.logo{
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+}
+
+#sidebarButton{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+#sidebarButton:hover{
+    cursor: pointer;
+}
+
+#userName{
+    float: right;
+    margin-right: 10px;
+}
+
+.profilePic{
+    float: right;
+    margin-left: 10px;
+}
+
+/*SIDEBAR*/
+
+#sidebar{
+    background-color: aqua;
+    visibility: hidden;
+    width: 25%;
+    text-align: center;
+
+}
+
+.sidebarButtons{
+    height: 40px;
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/*CONTENT AREA*/
+#content-area{
+    background-color: #a9b5df;
+    width: 1000px;
+    height: 1000px;
+}
+
+.task{
+    background-color: red;
+}
+
+#highPriority{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+
+#mediumPriority{
+    background-color: gray;
+    height: 100px;
+    width: 100%;
+}
+
+#lowPriority{
+    background-color: lightgray;
+    height: 100px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*Create Menu*/
+
+#createPopUp{
+    background-color: #a9b5df;
+    visibility: hidden;
+    width: 35%;
+    height: auto;
+    border-style: none;
+    border-radius: 30px;
+    text-align: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    box-shadow: 2px 2px 5px black;
+}
+
+#taskName{
+    height: 50px;
+    width: 90%;
+    text-align: center;
+    border-style: none;
+}
+
+.createButtons{
+    background-color: #2d336b;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    width: 90%;
+    margin: 10px;
+    text-align: center;
+
+    box-shadow: 2px 2px 5px black;
+}
+
+#cancelCreate{
+    background-color: #eb4335;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    width: 40%;
+    margin: 20px;
+    text-align: center;
+    
+    box-shadow: 2px 2px 5px black;
+}
+
+
+#confirmCreate{
+    background-color: #34a853;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    width: 40%;
+    margin: 25px;
+    text-align: center;
+    box-shadow: 2px 2px 5px black;
+    
+}
+
+.createButtons,#cancelCreate,#confirmCreate:hover{
+    cursor: pointer;
+}

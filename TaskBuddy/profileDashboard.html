@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Dashboard</title>
+</head>
+<body>
+    <!--HEADER-->
+    <div class="header">
+        <img src="Images/placeholder.png" alt="SidebarIcon" id="sidebarButton">
+        <img src="Images/HORIZONTAL.png" alt="TaskBuddy" class="logo">
+        <img src="Images/placeholder.png" alt="profilepic" class="profilePic">
+        <div class="username"><p id="userName">UserName</p></div>
+    </div>
+
+    <br>
+
+    <!--SIDEBAR-->
+
+    <div id="sidebar">
+        <img src="Images/HORIZONTAL.png" alt="Taskbuddy">
+        <button id="dashboardButton" class="sidebarButtons">Dashboard</button>
+        <button id="profileButton" class="sidebarButtons">Profile</button>
+        <button id="settingsButton" class="sidebarButtons">Settings</button>
+        <button id="logOut" class="sidebarButtons">Log Out</button>
+    </div>
+
+    <!--PROFILE-->
+    <div class="folders">
+        <div class="sidebar">
+            <div class="profile">
+                <div class="avatar"></div>
+            </div>
+            <div class="recent-activities">Recent Activities</div>
+        </div>
+
+    <!--CREATE AND DELETE-->
+    <button id="create">Create</button>
+    <button id="delete">Delete</button>
+
+    <!--CREATE TASK POP-UP-->
+    <div id="createPopUp">
+        <h1>Create Task</h1>
+        <input type="text" name="taskName" id="taskName" placeholder="Task Name">
+        <input type="date" name="deadline" id="deadline" class="createButtons">
+        <select name="setPriority" id="setPriority" class="createButtons">
+            <option value="lowPriority">Low Priority</option>
+            <option value="mediumPriority">Medium Priority</option>
+            <option value="highPriority">High Priority</option>
+        </select>
+        <button id="selectFolder" class="createButtons">Select Folder</button>
+        <button id="cancelCreate">Cancel</button>
+        <button id="confirmCreate">Create</button>
+    </div>
+        
+        <div class="main-content">
+            <h1>Profile Dashboard</h1>
+            <div class="tabs">
+                <button class="tab">Pendings</button>
+                <button class="tab">Finished</button>
+                <button class="tab">Created</button>
+                <button class="tab">Deleted</button>
+            </div>
+            <div id="content-area">
+                <!-- Content will go here -->
+                <div id="highPriority"></div>
+                <div id="mediumPriority"></div>
+                <div id="lowPriority"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="profileDashboard.js"></script>
+</html>
